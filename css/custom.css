@@ -179,7 +179,7 @@ nav.navbar.bootsnav ul.nav > li > a:hover,nav.navbar.bootsnav ul.nav > li > a:fo
     margin: 6px 0;
 }
 .nav.navbar-nav.menu {
-    float: right;
+    text-align: center;
 }
 .attr-nav {
     margin: 5px -10px 0 0;
@@ -295,9 +295,6 @@ nav.navbar.bootsnav ul.nav > li > a:hover,nav.navbar.bootsnav ul.nav > li > a:fo
 .about_content .btn.know_btn {
     margin: 18px 0 60px;
 }
-.about_bg {
-    background: url(../images/logo.jpeg)no-repeat right;
-}
 
 /*Head Title*/
 .head_title p{
@@ -338,6 +335,10 @@ nav.navbar.bootsnav ul.nav > li > a:hover,nav.navbar.bootsnav ul.nav > li > a:fo
 }
 .service_item .btn.know_btn {
     margin: 20px 0 100px;
+}
+
+.service_item img {
+    border-radius: 10px;
 }
 
 /* Portfolio */
@@ -556,6 +557,9 @@ nav.navbar.bootsnav ul.nav > li > a:hover,nav.navbar.bootsnav ul.nav > li > a:fo
     width: 250px;
     box-shadow: none;
 }
+.about_banner img {
+    margin-top: 10rem;
+}
 #contact_form .form-inline textarea.form-control {
     width: 388px;
     resize:none;
@@ -745,6 +749,7 @@ footer::after {
     .carousel-inner > .item > a > img, .carousel-inner > .item > img {
         height: 550px;
     }
+
     .carousel-caption {
         left: 3%;
         right: 3%;
@@ -752,14 +757,18 @@ footer::after {
     }
 
     .about_banner > img {
-        width: 334px;
+        width: 100%;
+        object-fit: cover;
         display:block;
         margin:0 auto;
     }
+
     .grid-item {
         height: 220px !important;
     }
+
     .grid-item--height2 { height: 440px !important;}
+    
     .grid-item .portfolio_hover_area .fa {
         margin-top: 73px;
     }
@@ -836,7 +845,29 @@ footer::after {
 
 }
 
+@media (min-width: 767px) {
+    .contain {
+        padding-left: 1rem;
+    }
+
+    .contain ul {
+        margin: auto;
+    }
+
+    .about_banner img {
+        margin-top: 10rem;
+    }
+}
+
 @media (max-width: 767px) {
+    .top_nav{
+        display: none;
+    }
+    
+    .navbar-brand img{
+        margin: auto;
+    }
+    
     h1 {
         font-size: 32px;
         line-height: 35px;
