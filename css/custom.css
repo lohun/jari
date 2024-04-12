@@ -201,6 +201,11 @@ nav.navbar.bootsnav ul.nav > li > a:hover,nav.navbar.bootsnav ul.nav > li > a:fo
     width:100%;
     height: 700px;
 }
+
+.home .carousel .item video{
+    width:100%;
+    height: 700px;
+}
 /*.carousel-inner > .item > a > img,
 .carousel-inner > .item > img {
     height: 700px;
