@@ -1,0 +1,240 @@
+CRITICAL - 2024-04-18 10:52:55 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: ",edia"
+[Method: GET, Route: admin/,edia]
+in SYSTEMPATH/Router/Router.php on line 736.
+ 1 SYSTEMPATH/Router/Router.php(203): CodeIgniter\Router\Router->checkDisallowedChars()
+ 2 SYSTEMPATH/CodeIgniter.php(834): CodeIgniter\Router\Router->handle()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt()
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(49): require_once('/opt/lampp/htdocs/kingjari/public/index.php')
+CRITICAL - 2024-04-18 10:53:45 --> ErrorException: finfo_file(/tmp/phpVGAdeR): Failed to open stream: No such file or directory
+[Method: POST, Route: admin/media]
+in SYSTEMPATH/Files/File.php on line 114.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/Files/File.php(114): finfo_file()
+ 3 APPPATH/Controllers/Admin.php(241): CodeIgniter\Files\File->getMimeType()
+ 4 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Admin->addMedia()
+ 5 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 7 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 9 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+10 SYSTEMPATH/Commands/Server/rewrite.php(49): require_once('/opt/lampp/htdocs/kingjari/public/index.php')
+CRITICAL - 2024-04-18 15:52:25 --> RuntimeException: SplFileInfo::getType(): Lstat failed for /opt/lampp/htdocs/kingjari/app//public/uploads/20240418/1713455545_225101e913e4c7dc592e.jpg
+[Method: POST, Route: admin/media]
+in APPPATH/Controllers/Admin.php on line 241.
+ 1 APPPATH/Controllers/Admin.php(241): SplFileInfo->getType()
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Admin->addMedia()
+ 3 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(49): require_once('/opt/lampp/htdocs/kingjari/public/index.php')
+CRITICAL - 2024-04-18 15:54:13 --> ErrorException: finfo_file(/opt/lampp/htdocs/kingjari/app//public/uploads/20240418/1713455653_a98d09815072df91d7b8.jpg): Failed to open stream: No such file or directory
+[Method: POST, Route: admin/media]
+in SYSTEMPATH/Files/File.php on line 114.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/Files/File.php(114): finfo_file()
+ 3 APPPATH/Controllers/Admin.php(241): CodeIgniter\Files\File->getMimeType()
+ 4 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Admin->addMedia()
+ 5 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 7 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 9 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+10 SYSTEMPATH/Commands/Server/rewrite.php(49): require_once('/opt/lampp/htdocs/kingjari/public/index.php')
+CRITICAL - 2024-04-18 15:59:40 --> ErrorException: finfo_file(/opt/lampp/htdocs/kingjari/app/public/20240418/1713455980_e7b8105d6d69d6839f10.jpg): Failed to open stream: No such file or directory
+[Method: POST, Route: admin/media]
+in SYSTEMPATH/Files/File.php on line 114.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/Files/File.php(114): finfo_file()
+ 3 APPPATH/Controllers/Admin.php(241): CodeIgniter\Files\File->getMimeType()
+ 4 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Admin->addMedia()
+ 5 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 7 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 9 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+10 SYSTEMPATH/Commands/Server/rewrite.php(49): require_once('/opt/lampp/htdocs/kingjari/public/index.php')
+CRITICAL - 2024-04-18 16:09:02 --> ErrorException: finfo_file(/opt/lampp/htdocs/kingjari/writable/upload/20240418/1713456542_902925b4434738f0c0e0.jpg): Failed to open stream: No such file or directory
+[Method: POST, Route: admin/media]
+in SYSTEMPATH/Files/File.php on line 114.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/Files/File.php(114): finfo_file()
+ 3 APPPATH/Controllers/Admin.php(241): CodeIgniter\Files\File->getMimeType()
+ 4 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Admin->addMedia()
+ 5 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 7 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 9 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+10 SYSTEMPATH/Commands/Server/rewrite.php(49): require_once('/opt/lampp/htdocs/kingjari/public/index.php')
+ERROR - 2024-04-18 16:10:40 --> mysqli_sql_exception: Unknown column 'thumbnail' in 'field list' in /opt/lampp/htdocs/kingjari/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:308
+Stack trace:
+#0 /opt/lampp/htdocs/kingjari/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(308): mysqli->query()
+#1 /opt/lampp/htdocs/kingjari/vendor/codeigniter4/framework/system/Database/BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /opt/lampp/htdocs/kingjari/vendor/codeigniter4/framework/system/Database/BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /opt/lampp/htdocs/kingjari/app/Models/HomeModel.php(91): CodeIgniter\Database\BaseConnection->query()
+#4 /opt/lampp/htdocs/kingjari/app/Controllers/Admin.php(241): App\Models\HomeModel->addMedia()
+#5 /opt/lampp/htdocs/kingjari/vendor/codeigniter4/framework/system/CodeIgniter.php(933): App\Controllers\Admin->addMedia()
+#6 /opt/lampp/htdocs/kingjari/vendor/codeigniter4/framework/system/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+#7 /opt/lampp/htdocs/kingjari/vendor/codeigniter4/framework/system/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+#8 /opt/lampp/htdocs/kingjari/vendor/codeigniter4/framework/system/Boot.php(312): CodeIgniter\CodeIgniter->run()
+#9 /opt/lampp/htdocs/kingjari/vendor/codeigniter4/framework/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+#10 /opt/lampp/htdocs/kingjari/public/index.php(56): CodeIgniter\Boot::bootWeb()
+#11 /opt/lampp/htdocs/kingjari/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(49): require_once('...')
+#12 {main}
+ERROR - 2024-04-18 16:18:00 --> mysqli_sql_exception: Unknown column 'thumbnail' in 'field list' in /opt/lampp/htdocs/kingjari/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:308
+Stack trace:
+#0 /opt/lampp/htdocs/kingjari/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(308): mysqli->query()
+#1 /opt/lampp/htdocs/kingjari/vendor/codeigniter4/framework/system/Database/BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /opt/lampp/htdocs/kingjari/vendor/codeigniter4/framework/system/Database/BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /opt/lampp/htdocs/kingjari/app/Models/HomeModel.php(91): CodeIgniter\Database\BaseConnection->query()
+#4 /opt/lampp/htdocs/kingjari/app/Controllers/Admin.php(241): App\Models\HomeModel->addMedia()
+#5 /opt/lampp/htdocs/kingjari/vendor/codeigniter4/framework/system/CodeIgniter.php(933): App\Controllers\Admin->addMedia()
+#6 /opt/lampp/htdocs/kingjari/vendor/codeigniter4/framework/system/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+#7 /opt/lampp/htdocs/kingjari/vendor/codeigniter4/framework/system/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+#8 /opt/lampp/htdocs/kingjari/vendor/codeigniter4/framework/system/Boot.php(312): CodeIgniter\CodeIgniter->run()
+#9 /opt/lampp/htdocs/kingjari/vendor/codeigniter4/framework/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+#10 /opt/lampp/htdocs/kingjari/public/index.php(56): CodeIgniter\Boot::bootWeb()
+#11 /opt/lampp/htdocs/kingjari/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(49): require_once('...')
+#12 {main}
+CRITICAL - 2024-04-18 17:56:11 --> CodeIgniter\Files\Exceptions\FileException: Could not move file "1713462971_304f919ed337db50a333.jpg" to "/opt/lampp/htdocs/kingjari/app/public/uploads/". Reason: rename(/opt/lampp/htdocs/kingjari/writable/uploads/20240418/1713462971_304f919ed337db50a333.jpg,/opt/lampp/htdocs/kingjari/app/public/uploads/1713462971_304f919ed337db50a333.jpg): No such file or directory
+[Method: POST, Route: admin/media]
+in SYSTEMPATH/Files/File.php on line 148.
+ 1 SYSTEMPATH/Files/File.php(148): CodeIgniter\Files\Exceptions\FileException::forUnableToMove()
+ 2 APPPATH/Controllers/Admin.php(241): CodeIgniter\Files\File->move()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Admin->addMedia()
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+ 9 SYSTEMPATH/Commands/Server/rewrite.php(49): require_once('/opt/lampp/htdocs/kingjari/public/index.php')
+CRITICAL - 2024-04-18 17:56:16 --> CodeIgniter\Files\Exceptions\FileException: Could not move file "1713462976_56182775f63b099ba56a.jpg" to "/opt/lampp/htdocs/kingjari/app/public/uploads/". Reason: rename(/opt/lampp/htdocs/kingjari/writable/uploads/20240418/1713462976_56182775f63b099ba56a.jpg,/opt/lampp/htdocs/kingjari/app/public/uploads/1713462976_56182775f63b099ba56a.jpg): No such file or directory
+[Method: POST, Route: admin/media]
+in SYSTEMPATH/Files/File.php on line 148.
+ 1 SYSTEMPATH/Files/File.php(148): CodeIgniter\Files\Exceptions\FileException::forUnableToMove()
+ 2 APPPATH/Controllers/Admin.php(241): CodeIgniter\Files\File->move()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Admin->addMedia()
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+ 9 SYSTEMPATH/Commands/Server/rewrite.php(49): require_once('/opt/lampp/htdocs/kingjari/public/index.php')
+CRITICAL - 2024-04-18 17:56:48 --> CodeIgniter\Files\Exceptions\FileException: Could not move file "1713463008_844373d3f353fa075628.jpg" to "/opt/lampp/htdocs/kingjari/app/public/uploads/". Reason: rename(/opt/lampp/htdocs/kingjari/writable/uploads/20240418/1713463008_844373d3f353fa075628.jpg,/opt/lampp/htdocs/kingjari/app/public/uploads/1713463008_844373d3f353fa075628.jpg): No such file or directory
+[Method: POST, Route: admin/media]
+in SYSTEMPATH/Files/File.php on line 148.
+ 1 SYSTEMPATH/Files/File.php(148): CodeIgniter\Files\Exceptions\FileException::forUnableToMove()
+ 2 APPPATH/Controllers/Admin.php(241): CodeIgniter\Files\File->move()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Admin->addMedia()
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+ 9 SYSTEMPATH/Commands/Server/rewrite.php(49): require_once('/opt/lampp/htdocs/kingjari/public/index.php')
+CRITICAL - 2024-04-18 19:29:05 --> CodeIgniter\Files\Exceptions\FileException: Could not move file "phpruo6IT" to "/opt/lampp/htdocs/kingjari/app/public/uploads/". Reason: rename(/tmp/phpruo6IT,/opt/lampp/htdocs/kingjari/app/public/uploads/IMG-20240407-WA0007.jpg): No such file or directory
+[Method: POST, Route: admin/media]
+in SYSTEMPATH/Files/File.php on line 148.
+ 1 SYSTEMPATH/Files/File.php(148): CodeIgniter\Files\Exceptions\FileException::forUnableToMove()
+ 2 APPPATH/Controllers/Admin.php(239): CodeIgniter\Files\File->move()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Admin->addMedia()
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+ 9 SYSTEMPATH/Commands/Server/rewrite.php(49): require_once('/opt/lampp/htdocs/kingjari/public/index.php')
+CRITICAL - 2024-04-18 19:32:15 --> CodeIgniter\Files\Exceptions\FileException: Could not move file "phpTpc0u0" to "/opt/lampp/htdocs/kingjari/app/public/uploads/phpTpc0u0/". Reason: rename(/tmp/phpTpc0u0,/opt/lampp/htdocs/kingjari/app/public/uploads/phpTpc0u0/phpTpc0u0): No such file or directory
+[Method: POST, Route: admin/media]
+in SYSTEMPATH/Files/File.php on line 148.
+ 1 SYSTEMPATH/Files/File.php(148): CodeIgniter\Files\Exceptions\FileException::forUnableToMove()
+ 2 APPPATH/Controllers/Admin.php(239): CodeIgniter\Files\File->move()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Admin->addMedia()
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+ 9 SYSTEMPATH/Commands/Server/rewrite.php(49): require_once('/opt/lampp/htdocs/kingjari/public/index.php')
+CRITICAL - 2024-04-18 19:45:10 --> CodeIgniter\Files\Exceptions\FileException: Could not move file "phpCLfgFz" to "/opt/lampp/htdocs/kingjari/app/public/uploads/phpCLfgFz/". Reason: rename(/tmp/phpCLfgFz,/opt/lampp/htdocs/kingjari/app/public/uploads/phpCLfgFz/phpCLfgFz): No such file or directory
+[Method: POST, Route: admin/media]
+in SYSTEMPATH/Files/File.php on line 148.
+ 1 SYSTEMPATH/Files/File.php(148): CodeIgniter\Files\Exceptions\FileException::forUnableToMove()
+ 2 APPPATH/Controllers/Admin.php(239): CodeIgniter\Files\File->move()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Admin->addMedia()
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+ 9 SYSTEMPATH/Commands/Server/rewrite.php(49): require_once('/opt/lampp/htdocs/kingjari/public/index.php')
+CRITICAL - 2024-04-18 19:49:19 --> ErrorException: finfo_file(/tmp/phpxN5P4w): Failed to open stream: No such file or directory
+[Method: POST, Route: admin/media]
+in SYSTEMPATH/Files/File.php on line 114.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/Files/File.php(114): finfo_file()
+ 3 APPPATH/Controllers/Admin.php(239): CodeIgniter\Files\File->getMimeType()
+ 4 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Admin->addMedia()
+ 5 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 7 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 9 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+10 SYSTEMPATH/Commands/Server/rewrite.php(49): require_once('/opt/lampp/htdocs/kingjari/public/index.php')
+CRITICAL - 2024-04-18 19:57:34 --> ErrorException: finfo_file(/tmp/phpuMyE6H): Failed to open stream: No such file or directory
+[Method: POST, Route: admin/media]
+in SYSTEMPATH/Files/File.php on line 114.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/Files/File.php(114): finfo_file()
+ 3 APPPATH/Controllers/Admin.php(239): CodeIgniter\Files\File->getMimeType()
+ 4 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Admin->addMedia()
+ 5 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 7 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 9 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+10 SYSTEMPATH/Commands/Server/rewrite.php(49): require_once('/opt/lampp/htdocs/kingjari/public/index.php')
+CRITICAL - 2024-04-18 20:04:52 --> CodeIgniter\HTTP\Exceptions\HTTPException: The uploaded file has already been moved.
+[Method: POST, Route: admin/media]
+in SYSTEMPATH/HTTP/Files/UploadedFile.php on line 138.
+ 1 SYSTEMPATH/HTTP/Files/UploadedFile.php(138): CodeIgniter\HTTP\Exceptions\HTTPException::forAlreadyMoved()
+ 2 APPPATH/Controllers/Admin.php(238): CodeIgniter\HTTP\Files\UploadedFile->move()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Admin->addMedia()
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+ 9 SYSTEMPATH/Commands/Server/rewrite.php(49): require_once('/opt/lampp/htdocs/kingjari/public/index.php')
+CRITICAL - 2024-04-18 20:12:16 --> ErrorException: finfo_file(/tmp/phpB8Hczu): Failed to open stream: No such file or directory
+[Method: POST, Route: admin/media]
+in SYSTEMPATH/Files/File.php on line 114.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/Files/File.php(114): finfo_file()
+ 3 APPPATH/Controllers/Admin.php(241): CodeIgniter\Files\File->getMimeType()
+ 4 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Admin->addMedia()
+ 5 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 7 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 9 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+10 SYSTEMPATH/Commands/Server/rewrite.php(49): require_once('/opt/lampp/htdocs/kingjari/public/index.php')
+CRITICAL - 2024-04-18 20:14:11 --> ErrorException: finfo_file(/tmp/phpLOkeg2): Failed to open stream: No such file or directory
+[Method: POST, Route: admin/media]
+in SYSTEMPATH/Files/File.php on line 114.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/Files/File.php(114): finfo_file()
+ 3 APPPATH/Controllers/Admin.php(241): CodeIgniter\Files\File->getMimeType()
+ 4 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Admin->addMedia()
+ 5 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 7 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 9 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+10 SYSTEMPATH/Commands/Server/rewrite.php(49): require_once('/opt/lampp/htdocs/kingjari/public/index.php')

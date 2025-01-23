@@ -1,0 +1,156 @@
+CRITICAL - 2024-05-12 12:42:37 --> Error: Undefined constant "CodeIgniter\Database\MySQLi\MYSQLI_STORE_RESULT"
+[Method: GET, Route: /]
+in SYSTEMPATH/Database/Database.php on line 139.
+ 1 SYSTEMPATH/Database/Database.php(57): CodeIgniter\Database\Database->initDriver()
+ 2 SYSTEMPATH/Database/Config.php(84): CodeIgniter\Database\Database->load()
+ 3 SYSTEMPATH/Model.php(155): CodeIgniter\Database\Config::connect()
+ 4 APPPATH/Controllers/Home.php(19): CodeIgniter\Model->__construct()
+ 5 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->index()
+ 6 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 8 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+10 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+11 SYSTEMPATH/Commands/Server/rewrite.php(49): require_once('/opt/lampp/htdocs/kingjari/public/index.php')
+CRITICAL - 2024-05-12 13:17:07 --> Error: Undefined constant "CodeIgniter\Database\MySQLi\MYSQLI_STORE_RESULT"
+[Method: GET, Route: /]
+in SYSTEMPATH/Database/Database.php on line 139.
+ 1 SYSTEMPATH/Database/Database.php(57): CodeIgniter\Database\Database->initDriver()
+ 2 SYSTEMPATH/Database/Config.php(84): CodeIgniter\Database\Database->load()
+ 3 SYSTEMPATH/Model.php(155): CodeIgniter\Database\Config::connect()
+ 4 APPPATH/Controllers/Home.php(19): CodeIgniter\Model->__construct()
+ 5 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->index()
+ 6 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 8 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+10 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+11 SYSTEMPATH/Commands/Server/rewrite.php(49): require_once('/opt/lampp/htdocs/kingjari/public/index.php')
+CRITICAL - 2024-05-12 13:17:10 --> Error: Undefined constant "CodeIgniter\Database\MySQLi\MYSQLI_STORE_RESULT"
+[Method: GET, Route: /]
+in SYSTEMPATH/Database/Database.php on line 139.
+ 1 SYSTEMPATH/Database/Database.php(57): CodeIgniter\Database\Database->initDriver()
+ 2 SYSTEMPATH/Database/Config.php(84): CodeIgniter\Database\Database->load()
+ 3 SYSTEMPATH/Model.php(155): CodeIgniter\Database\Config::connect()
+ 4 APPPATH/Controllers/Home.php(19): CodeIgniter\Model->__construct()
+ 5 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->index()
+ 6 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 8 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+10 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+11 SYSTEMPATH/Commands/Server/rewrite.php(49): require_once('/opt/lampp/htdocs/kingjari/public/index.php')
+ERROR - 2024-05-12 14:23:42 --> Email: sendWithSmtp throwed ErrorException: fsockopen(): SSL: Handshake timed out in /opt/lampp/htdocs/kingjari/vendor/codeigniter4/framework/system/Email/Email.php:1896
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /opt/lampp/htdocs/kingjari/vendor/codeigniter4/framework/system/Email/Email.php(1896): fsockopen()
+#2 /opt/lampp/htdocs/kingjari/vendor/codeigniter4/framework/system/Email/Email.php(1809): CodeIgniter\Email\Email->SMTPConnect()
+#3 /opt/lampp/htdocs/kingjari/vendor/codeigniter4/framework/system/Email/Email.php(1694): CodeIgniter\Email\Email->sendWithSmtp()
+#4 /opt/lampp/htdocs/kingjari/vendor/codeigniter4/framework/system/Email/Email.php(1589): CodeIgniter\Email\Email->spoolEmail()
+#5 /opt/lampp/htdocs/kingjari/vendor/benedmunds/codeigniter-ion-auth/Libraries/IonAuth.php(147): CodeIgniter\Email\Email->send()
+#6 /opt/lampp/htdocs/kingjari/app/Controllers/Admin.php(135): IonAuth\Libraries\IonAuth->forgottenPassword()
+#7 /opt/lampp/htdocs/kingjari/vendor/codeigniter4/framework/system/CodeIgniter.php(933): App\Controllers\Admin->forgotPasswordSubmit()
+#8 /opt/lampp/htdocs/kingjari/vendor/codeigniter4/framework/system/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+#9 /opt/lampp/htdocs/kingjari/vendor/codeigniter4/framework/system/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+#10 /opt/lampp/htdocs/kingjari/vendor/codeigniter4/framework/system/Boot.php(312): CodeIgniter\CodeIgniter->run()
+#11 /opt/lampp/htdocs/kingjari/vendor/codeigniter4/framework/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+#12 /opt/lampp/htdocs/kingjari/public/index.php(56): CodeIgniter\Boot::bootWeb()
+#13 /opt/lampp/htdocs/kingjari/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(49): require_once('...')
+#14 {main}
+ERROR - 2024-05-12 14:23:42 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2024-05-12 14:23:42 --> 
+CRITICAL - 2024-05-12 14:30:17 --> ErrorException: Undefined array key "reset your password"
+[Method: POST, Route: admin/forgotPassword]
+in SYSTEMPATH/HTTP/URI.php on line 374.
+ 1 SYSTEMPATH/HTTP/URI.php(374): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/HTTP/URI.php(638): CodeIgniter\HTTP\URI->getAuthority()
+ 3 SYSTEMPATH/HTTP/SiteURI.php(113): CodeIgniter\HTTP\URI->__toString()
+ 4 SYSTEMPATH/HTTP/SiteURI.php(388): CodeIgniter\HTTP\SiteURI->__construct()
+ 5 SYSTEMPATH/Helpers/url_helper.php(59): CodeIgniter\HTTP\SiteURI->baseUrl()
+ 6 VENDORPATH/benedmunds/codeigniter-ion-auth/Views/auth/email/forgot_password.tpl.php(3): base_url()
+ 7 SYSTEMPATH/View/View.php(234): include('/opt/lampp/htdocs/kingjari/vendor/benedmunds/codeigniter-ion-auth/Views/auth/email/forgot_password.tpl.php')
+ 8 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 9 SYSTEMPATH/Common.php(1171): CodeIgniter\View\View->render()
+10 VENDORPATH/benedmunds/codeigniter-ion-auth/Libraries/IonAuth.php(141): view()
+11 APPPATH/Controllers/Admin.php(135): IonAuth\Libraries\IonAuth->forgottenPassword()
+12 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Admin->forgotPasswordSubmit()
+13 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+14 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+15 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+16 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+17 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+18 SYSTEMPATH/Commands/Server/rewrite.php(49): require_once('/opt/lampp/htdocs/kingjari/public/index.php')
+CRITICAL - 2024-05-12 14:32:17 --> ErrorException: Undefined array key "reset your password"
+[Method: POST, Route: admin/forgotPassword]
+in SYSTEMPATH/HTTP/URI.php on line 374.
+ 1 SYSTEMPATH/HTTP/URI.php(374): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/HTTP/URI.php(638): CodeIgniter\HTTP\URI->getAuthority()
+ 3 SYSTEMPATH/HTTP/SiteURI.php(113): CodeIgniter\HTTP\URI->__toString()
+ 4 SYSTEMPATH/HTTP/SiteURI.php(388): CodeIgniter\HTTP\SiteURI->__construct()
+ 5 SYSTEMPATH/Helpers/url_helper.php(59): CodeIgniter\HTTP\SiteURI->baseUrl()
+ 6 VENDORPATH/benedmunds/codeigniter-ion-auth/Views/auth/email/forgot_password.tpl.php(3): base_url()
+ 7 SYSTEMPATH/View/View.php(234): include('/opt/lampp/htdocs/kingjari/vendor/benedmunds/codeigniter-ion-auth/Views/auth/email/forgot_password.tpl.php')
+ 8 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 9 SYSTEMPATH/Common.php(1171): CodeIgniter\View\View->render()
+10 VENDORPATH/benedmunds/codeigniter-ion-auth/Libraries/IonAuth.php(141): view()
+11 APPPATH/Controllers/Admin.php(135): IonAuth\Libraries\IonAuth->forgottenPassword()
+12 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Admin->forgotPasswordSubmit()
+13 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+14 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+15 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+16 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+17 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+18 SYSTEMPATH/Commands/Server/rewrite.php(49): require_once('/opt/lampp/htdocs/kingjari/public/index.php')
+CRITICAL - 2024-05-12 14:36:11 --> ErrorException: Undefined array key "reset your password"
+[Method: POST, Route: admin/forgotPassword]
+in SYSTEMPATH/HTTP/URI.php on line 374.
+ 1 SYSTEMPATH/HTTP/URI.php(374): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/HTTP/URI.php(638): CodeIgniter\HTTP\URI->getAuthority()
+ 3 SYSTEMPATH/HTTP/SiteURI.php(113): CodeIgniter\HTTP\URI->__toString()
+ 4 SYSTEMPATH/HTTP/SiteURI.php(388): CodeIgniter\HTTP\SiteURI->__construct()
+ 5 SYSTEMPATH/Helpers/url_helper.php(59): CodeIgniter\HTTP\SiteURI->baseUrl()
+ 6 APPPATH/Views/auth/email/forgot_password.tpl.php(3): base_url()
+ 7 SYSTEMPATH/View/View.php(234): include('/opt/lampp/htdocs/kingjari/app/Views/auth/email/forgot_password.tpl.php')
+ 8 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 9 SYSTEMPATH/Common.php(1171): CodeIgniter\View\View->render()
+10 VENDORPATH/benedmunds/codeigniter-ion-auth/Libraries/IonAuth.php(141): view()
+11 APPPATH/Controllers/Admin.php(135): IonAuth\Libraries\IonAuth->forgottenPassword()
+12 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Admin->forgotPasswordSubmit()
+13 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+14 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+15 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+16 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+17 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+18 SYSTEMPATH/Commands/Server/rewrite.php(49): require_once('/opt/lampp/htdocs/kingjari/public/index.php')
+ERROR - 2024-05-12 14:46:06 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2024-05-12 14:46:06 --> 220 smtp.gmail.com ESMTP ffacd0b85a97d-3502b8a78e8sm9078721f8f.61 - gsmtp
+
+hello: 250-smtp.gmail.com at your service, [102.89.34.207]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+from: 250 2.1.0 OK ffacd0b85a97d-3502b8a78e8sm9078721f8f.61 - gsmtp
+
+to: 250 2.1.5 OK ffacd0b85a97d-3502b8a78e8sm9078721f8f.61 - gsmtp
+
+data: 354  Go ahead ffacd0b85a97d-3502b8a78e8sm9078721f8f.61 - gsmtp
+
+
+quit: 250 2.0.0 OK  1715525165 ffacd0b85a97d-3502b8a78e8sm9078721f8f.61 - gsmtp
+
+The following SMTP error was encountered: 250 2.0.0 OK  1715525165 ffacd0b85a97d-3502b8a78e8sm9078721f8f.61 - gsmtp
+
+The following SMTP error was encountered: 
+ERROR - 2024-05-12 14:46:11 --> Email: sendWithSmtp throwed ErrorException: fgets(): SSL: Connection reset by peer in /opt/lampp/htdocs/kingjari/vendor/codeigniter4/framework/system/Email/Email.php:2113
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /opt/lampp/htdocs/kingjari/vendor/codeigniter4/framework/system/Email/Email.php(2113): fgets()
+#2 /opt/lampp/htdocs/kingjari/vendor/codeigniter4/framework/system/Email/Email.php(1992): CodeIgniter\Email\Email->getSMTPData()
+#3 /opt/lampp/htdocs/kingjari/vendor/codeigniter4/framework/system/Email/Email.php(2219): CodeIgniter\Email\Email->sendCommand()
+#4 [internal function]: CodeIgniter\Email\Email->__destruct()
+#5 {main}
